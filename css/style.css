@@ -3,23 +3,30 @@
     padding: 0;
     box-sizing: border-box;
     background: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.title {
+.titlee {
     color: #265a0eb9;
     text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 10px rgb(255, 255, 255), 0 0 21px rgb(226, 124, 84), 0 0 42px #32f6d5,
         0 0 82px #32e9f6, 0 0 92px #32f653, 0 0 102px #32f6c5, 0 0 151px #32f69b;
     text-align: center;
-    font-size: 80px;
+    font-size: 70px;
     margin-top: 100px;
 }
 
+.titlee0 {
+    color: #5a0e0eb9;
+    text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 10px rgb(255, 255, 255), 0 0 21px rgb(226, 124, 84), 0 0 42px #f63832,
+        0 0 82px #f63232, 0 0 92px #f68032, 0 0 102px #f64f32, 0 0 151px #f68a32;
+}
 
 img {
     width: 250px;
     height: 180px;
     background-size: cover;
     padding: 10px;
+    border-radius: 20px;
 }
 
 .container-1 {
@@ -34,7 +41,7 @@ img {
 
 }
 
-.container-1 h6 {
+.container-1 h5 {
     text-align: center;
     color: #fff;
 }
@@ -48,25 +55,85 @@ img {
 }
 
 .buy-x {
-    text-align: center;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 10px 50px;
 }
 
 .buy-x .buy-hijo {
     text-decoration: none;
-    color: rgb(228, 30, 30);
+    color: rgb(155, 30, 228);
     font-size: 20px;
+    padding: 0px 30px 10px;
 }
 
 .buy-hijo:hover {
     color: rgb(98, 248, 68);
-    font-size: 23px;
     transition: 200ms ease-in-out;
 }
 
+.buy-x .buy-hijo2 {
+    text-decoration: none;
+    color: rgb(155, 30, 228);
+    font-size: 20px;
+    padding: 0px 30px;
+}
+
+.buy-hijo2:hover {
+    color: rgb(98, 248, 68);
+    transition: 200ms ease-in-out;
+}
+
+.foooter {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+hr {
+    height: 1px;
+    border-color: #fff;
+}
+
+.intg {
+    text-align: center;
+    margin: 10px 200px;
+}
+
+.saludo-principal {
+    display: block;
+    justify-content: center;
+}
+
+.saludo-principal h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.saludo-principal p {
+    font-size: 25px;
+}
+
+.img-pt {
+    text-align: center;
+    justify-content: center;
+    margin-top: 120px;
+    width: 100%;
+    height: 350px;
+}
+
+.img-pt img {
+    width: 600px;
+    height: max-content;
+}
+
+
+
 @media (max-width: 1210px) {
 
-    .title {
+    .titlee {
         color: #265a0e;
         text-shadow: 0 0 7px rgb(17, 13, 13), 0 0 10px rgb(187, 87, 87);
 
@@ -77,22 +144,66 @@ img {
     .container-1 {
         flex-wrap: wrap;
         margin: 50px 0px 0px;
-
     }
 
     .buy-x {
-        margin: 30px 0px 50px;
+        margin: 30px 10px 50px;
     }
 
-    .buy-hijo:hover {
-        transition: none;
-        font-size: 20px;
+
+    .saludo-principal {
+        display: block;
+        justify-content: center;
+        margin: 10px 10px;
     }
+
+    .saludo-principal h2 {
+        font-size: 30px;
+    }
+
+    .intg {
+        text-align: center;
+        margin: 10px 10px;
+    }
+
+    .img-pt {
+        margin-top: 10px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .img-pt img {
+        width: 500px;
+        height: max-content;
+    }
+
 }
+
 
 @media (max-width: 558px) {
 
-    .title {
+    .titlee {
         font-size: 30px;
     }
+
+    .saludo-principal p {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .foooter {
+        font-size: 15px;
+    }
+
+    .img-pt {
+        margin-top: 10px;
+        width: 100%;
+        height: 130px;
+    }
+
+    .img-pt img {
+        width: 260px;
+        height: max-content;
+    }
+
 }

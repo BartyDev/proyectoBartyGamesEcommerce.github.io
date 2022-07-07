@@ -82,7 +82,7 @@ function validacion(nombre) {
 
 //validacion y retorno del nombre de usuario y bienvenida
 validacion(nombre);
-alert('🤗 Bienvenido(a)  ' + objectValidacion.toUpperCase() + '  a  "Barty Games" 🎮');
+alert('🤗 Bienvenido(a)  ' + objectValidacion.toUpperCase() + '  a  "barty G`o" 🎮');
 menu();
 
 
@@ -183,7 +183,7 @@ function mostrandoPedidos() {
   carritoCompras.forEach((i) => {
     subTotal = i.precio * i.cantidad;
     Total += subTotal;
-    mostrarCarrito += (i.titulo + ":" + i.genero + " $ " + i.precio + " cantidad : " + i.cantidad + " Sub Total " + subTotal + "\n");
+    mostrarCarrito += (i.titulo + ":" + i.genero + " $ " + i.precio + " cantidad : " + i.cantidad + " su precio es " + subTotal + "\n");
   });
   alert(mostrarCarrito + "\n Total a Pagar $ " + Total);
 
